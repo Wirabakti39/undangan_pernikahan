@@ -6,6 +6,7 @@
 
 body {
     font-family: "monsterrat", sans-serif;
+    min-height: 4000px;
 }
 
 .hero::before {
@@ -14,6 +15,8 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+    background-size: cover;
+    background-position: center;
     width: 100%;
     height: 100%;
     z-index: -1;
@@ -51,6 +54,74 @@ body {
     color: var(--putih);
 }
 
+.navigasi {
+    background-color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.navigasi .navbar-brand,
+.navigasi .offcanvas-title {
+    font-family: "Rouge Script", cursive;
+    font-size: 3.2rem;
+}
+
+.navigasi .offcanvas-body .nav-link {
+    text-transform: uppercase;
+    /* font-weight: 600; */
+}
+
+.home {
+    min-height: 100vh;
+    background-image: url('img/floral_background.png');
+    background-size: cover;
+    margin-top: -50px;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+}
+
+.home h2 {
+    font-family: 'Rouge Script', cursive;
+    font-size: 5rem;
+    color: var(--pink);
+    font: bold;
+}
+
+.home h3 {
+    color: #444;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.home p {
+    color: #666;
+    font-size: 1rem;
+}
+
+.home .couple {
+    margin-top: 75px;
+}
+.home .couple h3 {
+    font-family: "Rouge Script", cursive;
+    font-size: 2.3rem;
+    color: var(--pink);
+}
+.home .couple p {
+    font-family: "Libre Baskerville", serif;
+    font-size: 1rem;
+}
+.home .couple .ortu {
+    font-size: 0.8rem;
+}
+.home .couple img {
+    width: 100%;
+}
+
+.info {
+    min-height: 100vh;
+    background-image: url('img/info-bg.png');
+    background-size: cover;
+}
+
+
 /* MEDIA QUERY */
 
 /* laptop */
@@ -63,6 +134,10 @@ body {
 @media (max-width: 768px) {
     html {
         font-size: 60%;
+    }
+    .navigasi .offcanvas-body .nav-link {
+        text-align: center;
+        font-size: 2rem;
     }
 }
 /* handphone */
